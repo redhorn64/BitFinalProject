@@ -1,0 +1,398 @@
+/* 메인 이미지 */
+#mainImg {
+    max-height: 600px;
+    overflow: hidden;
+}
+#jejuImg {
+    max-height: initial;
+    margin-top: -30%;
+    width: 100%;
+}
+#jocheonImg {
+    max-height: initial;
+    margin-top: -15%;
+    width: 100%;
+}
+#gujwaImg {
+    max-height: initial;
+    margin-top: -5%;
+    width: 100%;
+}
+#sungsanImg {
+    max-height: initial;
+    margin-top: -25%;
+    width: 100%;
+}
+#pyoseonImg {
+    max-height: initial;
+    margin-top: -22%;
+    width: 100%;
+}
+#namwonImg {
+    max-height: initial;
+    margin-top: -7%;
+    width: 100%;
+}
+#seogwipoImg {
+    max-height: initial;
+    margin-top: -7%;
+    width: 100%;
+}
+#andeokImg {
+    max-height: initial;
+    margin-top: -7%;
+    width: 100%;
+}
+#daejungImg {
+    max-height: initial;
+    margin-top: -25%;
+    width: 100%;
+}
+#hangyeongImg {
+    max-height: initial;
+    margin-top: -15%;
+    width: 100%;
+}
+#hanrimImg {
+    max-height: initial;
+    margin-top: -8%;
+    width: 100%;
+}
+#aewolImg {
+    max-height: initial;
+    margin-top: -7%;
+    width: 100%;
+}
+#udoImg {
+    max-height: initial;
+    margin-top: -5%;
+    width: 100%;
+}
+
+
+/* spot List */
+.tourIntroTitle{
+    background-image: url('../../../image/titleLine.PNG');
+    background-size: 100% 100%;
+}
+@media only screen and (max-width:350px){
+    #TourPageComp {
+        margin-top: 50px;
+    }
+    .selectTourList{
+        float: right;
+        margin: 0 !important;
+        font-size: 5pt !important;
+    }
+    .selectTourList .MuiSelect-select{
+        font-size: 0.7rem;
+    }
+    #selectTour{
+        font-size: 5pt !important;
+    }
+    #itemBox{
+        text-align: center;
+        border: 1px solid #eee;
+        width: 40vw;
+        text-align: left;
+    }
+    #itemImg{
+        width: 40vw;
+        height: 40vw;
+    }
+    #itemTitle{
+        font-size: 0.6rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    #itemContentDiv{
+        font-size: 0.6rem;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #itemContent{
+        height: 28px;
+    }
+    #itemLikes{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #tourThumbIcon, #tourLocationIcon{
+        font-size: 0.6rem;
+    }
+    #itemLikes{
+        font-size: 0.6rem;
+    }
+    #itemAddr{
+        font-size: 0.2em;
+        width: 100px;
+        text-align: right;
+    }
+    .tourIntroTitle{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 13pt;
+        font-weight: 500;
+        text-align: center;
+    }
+    .tourIntroContent {
+        margin: 0 10px;
+        color: #999;
+        line-height: 20px;
+        font-size: 7pt;
+    }
+}
+@media only screen and (min-width:350px) and (max-width:450px){
+    #TourPageComp {
+        margin-top: 50px;
+    }
+    .selectTourList{
+        float: right;
+        margin: 0 !important;
+        font-size: 7pt !important;
+    }
+    .selectTourList .MuiSelect-select{
+        font-size: 0.7rem;
+    }
+    #selectTour{
+        font-size: 7pt !important;
+    }
+    #itemBox{
+        text-align: center;
+        border: 1px solid #eee;
+        width: 40vw;
+        text-align: left;
+    }
+    #itemImg{
+        width: 40vw;
+        height: 40vw;
+    }
+    #itemTitle{
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    #itemContentDiv{
+        font-size: 0.6rem;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #itemContent{
+        height: 28px;
+    }
+    #itemLikes{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #tourThumbIcon, #tourLocationIcon{
+        font-size: 0.6rem;
+    }
+    #itemLikes{
+        font-size: 0.6rem;
+    }
+    #itemAddr{
+        font-size: 0.2em;
+        width: 100px;
+        text-align: right;
+    }
+    .tourIntroTitle{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 13pt;
+        font-weight: 500;
+        text-align: center;
+    }
+    .tourIntroContent {
+        margin: 0 10px;
+        color: #999;
+        line-height: 20px;
+        font-size: 7pt;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .selectTourList{
+        float: right;
+        margin-right: 30px;
+        font-size: 9pt !important;
+    }
+    .selectTourList .MuiSelect-select{
+        font-size: 0.8rem;
+    }
+    #selectTour{
+        font-size: 9pt !important;
+    }
+    #itemBox{
+        text-align: center;
+        border: 1px solid #eee;
+        width: 200px;
+        text-align: left;
+    }
+    #itemImg{
+        width: 200px;
+        height: 200px;
+    }
+    #itemTitle{
+        font-size: 10pt;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+    #itemContentDiv{
+        /* font-size: 8pt; */
+        font-size: 0.6em;
+        margin-bottom: 11px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    #itemContent{
+        height: 30px;
+    }
+    #itemLikes{
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    #tourThumbIcon, #tourLocationIcon{
+        font-size: 12pt;
+    }
+    #itemLikes{
+        font-size: 8pt;
+    }
+    #itemAddr{
+        font-size: 0.8em;
+        width: 140px;
+        text-align: right;
+    }
+    .tourIntroTitle{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 20pt;
+        font-weight: 500;
+        text-align: center;
+    }
+    .tourIntroContent {
+        margin: 0 50px;
+        color: #999;
+        line-height: 30px;
+        font-size: 10pt;
+    }
+}
+@media only screen and (min-width:770px){
+    .selectTourList{
+        float: right;
+        margin-right: 70px;
+    }
+    #itemBox{
+        text-align: center;
+        border: 1px solid #eee;
+        width: 330px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        text-align: left;
+    }
+    #itemImg{
+        width: 330px;
+        height: 330px;
+    }
+    #itemTitle{
+        font-size: 15pt;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    #itemContentDiv{
+        /* font-size: 13pt; */
+        font-size: 0.9em;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #itemContent{
+        height: 42px;
+    }
+    #itemLikes{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    #tourThumbIcon, #tourLocationIcon{
+        font-size: 15pt;
+    }
+    #itemLikes{
+        font-size: 12pt;
+    }
+    #itemAddr{
+        font-size: 0.8em;
+        width: 250px;
+        text-align: right;
+    }
+    .tourIntroTitle{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 25pt;
+        font-weight: 500;
+        text-align: center;
+    }
+    .tourIntroContent {
+        margin: 0 100px;
+        color: #999;
+        line-height: 30px;
+    }
+}
+
+/* detailTour */
+.detailTitle{
+    background-image: url('../../../image/titleLine.PNG');
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width:450px){
+    #DetailTourComp {
+        margin-top: 50px;
+    }
+    .detailTitle{
+        margin-top: 10px;
+        font-size: 12pt;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .detailTitle{
+        margin-top: 50px;
+        font-size: 15pt;
+        font-weight: 500;
+        text-align: center;
+    }  
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .detailTitle{
+        margin-top: 80px;
+        font-size: 17pt;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:1023px){
+    .detailTitle{
+        margin-top: 100px;
+        font-size: 20pt;
+        font-weight: 500;
+        text-align: center;
+    }
+}

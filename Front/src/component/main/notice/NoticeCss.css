@@ -1,0 +1,133 @@
+@media only screen and (max-width:450px){
+    .noticePageDiv {
+        margin-top: 100px;
+    }
+    .noticeTable {
+        width: 90vw;
+    }
+    .noticeTable table th {
+        font-size: 0.7rem;
+    }
+    .noticeTable table td, .noticeTable a, .noticeTable span {
+        font-size: 0.6rem;
+    }
+    .noticeTable thead td b{
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+    .noticeTable table td button{
+        padding: 8px 13px;
+        font-size: 0.9rem;
+    }
+    .noticeContentEditor img {
+        max-width: 70vw;
+    }
+
+    /* 입력폼 */
+    .noticeInsertTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    .noticeInsertTable caption {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .noticeInsertTable button {
+        padding: 8px 13px;
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .noticeTable {
+        width: 90vw;
+    }
+    .noticeTable table th {
+        font-size: 0.8rem;
+    }
+    .noticeTable table td, .noticeTable a, .noticeTable span {
+        font-size: 0.7rem;
+    }
+    .noticeTable thead td b{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .noticeContentEditor img {
+        max-width: 70vw;
+    }
+
+    /* 입력폼 */
+    .noticeInsertTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    .noticeInsertTable caption {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .noticeTable {
+        width: 80vw;
+    }
+    .noticeTable thead td b{
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    .noticeContentEditor img {
+        max-width: 70vw;
+    }
+
+    /* 입력폼 */
+    .noticeInsertTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    .noticeInsertTable caption {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
+@media only screen and (min-width:1023px) and (max-width:1500px){
+    .noticeTable {
+        width: 80vw;
+    }
+    .noticeTable thead td b{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    .noticeContentEditor img {
+        max-width: 70vw;
+    }
+
+    /* 입력폼 */
+    .noticeInsertTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    .noticeInsertTable caption {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
+@media only screen and (min-width:1500px){
+    .noticeTable {
+        width: 80vw;
+    }
+    .noticeTable thead td b{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    .noticeContentEditor img {
+        max-width: 50vw;
+    }
+
+    /* 입력폼 */
+    .noticeInsertTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    .noticeInsertTable caption {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}

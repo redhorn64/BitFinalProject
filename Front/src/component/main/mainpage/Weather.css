@@ -1,0 +1,204 @@
+.jejuWeatherDiv {
+    border-radius: 0.6667rem;
+    /* background: linear-gradient(225deg, #ffffff, #e6e6e6); */
+    /* box-shadow:  -0.22223rem 0.22223rem 0.44446rem #ededed,
+             0.22223rem -0.22223rem 0.44446rem #ffffff; */
+    width: 6rem;
+    height: 8rem;
+    float:left;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.jejuWeatherDiv_small {
+    border-radius: 0.6667rem;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow:  -0.22223rem 0.22223rem 0.44446rem #ededed,
+             0.22223rem -0.22223rem 0.44446rem #ffffff;
+    /* width: 4.5rem;
+    height: 6rem; */
+    float:left;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    user-select: none;
+}
+
+
+/* margin: 1rem 1rem 1rem 3rem은 위 1rem, 오른쪽 1rem, 아래 1rem, 왼쪽 3rem */
+
+.jejuWeatherDot {
+    border-radius: 9.375rem;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 0.125rem 0.125rem 0.188rem #d9d9d9,
+                -0.125rem -0.125rem 0.188rem #ffffff;
+    width: 0.45rem;
+    height: 0.45rem;
+    padding: 0.313rem 0.313rem 0.313rem 0.313rem;
+    margin: 0.8rem 0.8rem 0.3131rem 0.8rem;
+}
+.preventFloat:after {
+    /* display: block;
+    clear: both;
+    content: '' */
+}
+
+.jejuWeatherContainer .slick-next:before, .jejuWeatherContainer .slick-prev:before{
+    color: gray;
+}
+
+@media only screen and (max-width:450px){
+    .jejuWeatherContainer {
+        border-radius: 0.6667rem;
+        /* background: linear-gradient(225deg, #ffffff, #e6e6e6); */
+        /* box-shadow:  -0.22223rem 0.22223rem 0.44446rem #ededed,
+                 0.22223rem -0.22223rem 0.44446rem #ffffff; */
+        /* width: 56rem; */
+        width: 95vw;
+        height: 250px;
+        /* overflow-x: scroll; */
+        /* margin: 0 1rem 1rem 1rem; */
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 0.7rem;
+        border-top: 0.1px solid #eee;
+        border-bottom: 0.1px solid #eee;
+        /* text-align: center; */
+    }
+    .jejuWeatherContainer select {
+        width: 30vw;
+        font-size: 0.7rem;
+    }
+    .jejuWeatherDiv_small {
+        width: 4.3rem;
+        height: 5.3rem;
+        font-size: 0.7rem;
+    }
+    .weatherInfo {
+        line-height: 21px;
+    }
+    #weatherNowTem {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .jejuWeatherContainer {
+        border-radius: 0.6667rem;
+        /* background: linear-gradient(225deg, #ffffff, #e6e6e6); */
+        /* box-shadow:  -0.22223rem 0.22223rem 0.44446rem #ededed,
+                 0.22223rem -0.22223rem 0.44446rem #ffffff; */
+        /* width: 56rem; */
+        width: 90vw;
+        height: 250px;
+        /* overflow-x: scroll; */
+        /* margin: 0 1rem 1rem 1rem; */
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 0.8rem;
+        border-top: 0.1px solid #eee;
+        border-bottom: 0.1px solid #eee;
+        /* text-align: center; */
+    }
+    .jejuWeatherContainer select {
+        width: 30vw;
+        font-size: 0.7rem;
+    }
+    .jejuWeatherDiv_small {
+        width: 4.5rem;
+        height: 5.3rem;
+        font-size: 0.7rem;
+    }
+    .weatherInfo {
+        line-height: 21px;
+    }
+    #weatherNowTem {
+        font-size: 1.3rem;
+        margin-bottom: 7px;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .jejuWeatherContainer {
+        border-radius: 0.6667rem;
+        /* background: linear-gradient(225deg, #ffffff, #e6e6e6); */
+        /* box-shadow:  -0.22223rem 0.22223rem 0.44446rem #ededed,
+                 0.22223rem -0.22223rem 0.44446rem #ffffff; */
+        /* width: 56rem; */
+        width: 90vw;
+        height: 350px;
+        /* overflow-x: scroll; */
+        /* margin: 0 1rem 1rem 1rem; */
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 0.8rem;
+        border-top: 0.1px solid #eee;
+        border-bottom: 0.1px solid #eee;
+        /* text-align: center; */
+        margin-left: 20px;
+    }
+    .jejuWeatherDiv_small {
+        width: 4.5rem;
+        height: 5.3rem;
+        font-size: 0.7rem;
+    }
+    .weatherInfo {
+        line-height: 23px;
+    }
+    #weatherNowTem {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (min-width:1023px) and (max-width:1500px){
+    .jejuWeatherContainer {
+        border-radius: 0.6667rem;
+        /* background: linear-gradient(225deg, #ffffff, #e6e6e6); */
+        /* box-shadow:  -0.22223rem 0.22223rem 0.44446rem #ededed,
+                 0.22223rem -0.22223rem 0.44446rem #ffffff; */
+        /* width: 56rem; */
+        width: 65vw;
+        height: 400px;
+        /* overflow-x: scroll; */
+        margin: 0 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 0.8rem;
+        /* text-align: center; */
+        margin-left: 20px;
+    }
+    .jejuWeatherDiv_small {
+        width: 4.5rem;
+        height: 6rem;
+        font-size: 0.7rem;
+    }
+    .weatherInfo {
+        line-height: 25px;
+    }
+    #weatherNowTem {
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (min-width:1500px){
+    .jejuWeatherContainer {
+        border-radius: 0.6667rem;
+        /* background: linear-gradient(225deg, #ffffff, #e6e6e6); */
+        /* box-shadow:  -0.22223rem 0.22223rem 0.44446rem #ededed,
+                 0.22223rem -0.22223rem 0.44446rem #ffffff; */
+        /* width: 56rem; */
+        width: 65vw;
+        height: 400px;
+        /* overflow-x: scroll; */
+        margin: 0 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 0.9rem;
+        margin-left: 30px;
+        /* text-align: center; */
+    }
+    .jejuWeatherDiv_small {
+        width: 4.5rem;
+        height: 6rem;
+        font-size: 0.8rem;
+    }
+    .weatherInfo {
+        line-height: 27px;
+    }
+    #weatherNowTem {
+        font-size: 1.6rem;
+    }
+}

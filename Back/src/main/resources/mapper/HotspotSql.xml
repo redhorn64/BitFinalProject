@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.jeju.mapper.HotspotMapper">
+	<select id="getList" parameterType="HashMap" resultType="hotspot">
+		select * from hotspot where groupNum=#{groupNum} and day=#{day}
+	</select>	
+	<select id="getGroupNum" parameterType="HashMap" resultType="hotspot">
+		select distinct groupNum from hotspot	
+	</select>
+	<select id="getDay" parameterType="HashMap" resultType="hotspot">
+		select distinct day from hotspot where groupNum=#{groupNum}	
+	</select>
+	<select id="getDays" parameterType="HashMap" resultType="hotspot">
+		select * from hotspot where groupNum=#{groupNum}	
+	</select>
+	
+	<select id="getCountOfDay" parameterType="String" resultType="int">
+		select count(*) from hotspot where groupNum=#{groupNum}
+	</select>
+</mapper>

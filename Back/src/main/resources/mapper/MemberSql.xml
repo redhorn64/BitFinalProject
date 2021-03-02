@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.jeju.mapper.MemberMapper">
+	<select id="getListOfMember" resultType="member">
+		select * from member
+	</select>
+	<select id="getDataOfMember" parameterType="String" resultType="member">
+		select * from member where id=#{id}
+	</select>
+	<select id="totalCountOfMember" resultType="int">
+		select count(*) from member
+	</select>
+	<insert id="insertOfMember" parameterType="member">
+		insert into member (id,provider,pass,name,gender,birth,photo,address,addrdetail,
+			email,email2,hp,gaipday)
+			values (#{id},'no',#{pass},#{name},#{gender},#{birth}
+			,IFNULL(#{photo}, 'no')
+			,#{address},#{addrdetail},#{email},#{email2},#{hp},now())
+	</insert>
+	<insert id="insertOfSosialMember" parameterType="member">
+		insert into member (id,provider,name,photo,
+			email,email2,gaipday,birth)
+			values (#{id},#{provider},#{name},#{photo}
+			,#{email},#{email2},now(),now())
+	</insert>
+	<update id="updateOfMember" parameterType="member">
+		update member set 
+		<if test="name!=null">
+			name=#{name}
+		</if>
+		<if test="gender!=null">
+			,gender=#{gender}
+		</if>
+		<if test="birth!=null">
+			,birth=#{birth}
+		</if>
+		<if test="address!=null">
+			,address=#{address}
+		</if>
+		<if test="addrdetail!=null">
+			,addrdetail=#{addrdetail}
+		</if>
+		<if test="photo!=null">
+			,photo=#{photo}
+		</if>
+		<if test="pass!=null">
+			,pass=#{pass}
+		</if>
+		<if test="email!=null">
+			,email=#{email}
+		</if>
+		<if test="email2!=null">
+			,email2=#{email2}
+		</if>
+		<if test="hp!=null">
+			,hp=#{hp}
+		</if>
+		<if test="provider!=null">
+			,provider=#{provider}
+		</if>
+		 where id=#{id}
+	</update>
+	<update id="updateOfPass" parameterType="member">
+		update member set pass=#{pass} where id=#{id}
+	</update>
+	<delete id="deleteOfMember" parameterType="String">
+		delete from member where id=#{id}	
+	</delete>
+	<select id="idCheckOfMember" parameterType="String" resultType="int">
+		select count(*) from member where id=#{id}
+	</select>
+	<select id="passCheckOfMember" parameterType="member" resultType="int">
+		select count(*) from member where id=#{id} and pass=#{pass}
+	</select>
+</mapper>

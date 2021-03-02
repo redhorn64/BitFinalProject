@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.jeju.mapper.WishlistMapper">
+	<insert id="insertAround" parameterType="wishlist">
+		insert into wishlist (memId,aroundId,content,wishday,wishtime)
+		 values (#{memId},#{aroundId},#{content},#{wishday},#{wishtime})
+	
+	</insert>
+	<insert id="insertSpot" parameterType="wishlist">
+		insert into wishlist (memId,spotId,content,wishday,wishtime)
+		 values (#{memId},#{spotId},#{content},#{wishday},#{wishtime})
+		
+	</insert>
+	<select id="isSpotSearch" parameterType="HashMap" resultType="int">
+		select count(*) from wishlist where spotId=#{spotId} and memId=#{memId}
+	
+	</select>
+	
+	<select id="isShareSearch" parameterType="String" resultType="int">
+		select count(*) from wishlist where shareNum=#{shareNum}
+	</select>
+	
+	<insert id="insertContent" parameterType="wishlist">
+		insert into wishlist (memId,content,wishday,wishtime)
+		 values (#{memId},#{content},#{wishday},#{wishtime})
+	
+	</insert>
+	
+	<insert id="insertshare" parameterType="wishlist">
+		insert into wishlist (memId,shareNum,wishday,content,wishtime)
+		 values (#{memId},#{shareNum},#{wishday},#{content},#{wishtime})
+	
+	</insert>
+	
+	<delete id="deleteContent" parameterType="String">
+		delete from wishlist where num=#{num}
+	
+	</delete>
+	
+	<select id="getList" parameterType="String" resultType="wishlist">
+		select * from wishlist where memId=#{memId} order by wishday asc
+	
+	</select>
+	
+	<select id="getMyreviews" parameterType="HashMap" resultType="spotreview">
+		select * from spotreview where memNum=#{memNum} order by num desc limit #{start},#{end}
+	
+	</select>
+	
+	<select id="getRecentreviews" parameterType="String" resultType="spotreview">
+		select * from spotreview where memNum=#{memNum} order by num desc limit 1,5
+	
+	</select>
+	
+	<select id="getSpottitle" parameterType="String" resultType="String">
+		select title from spotlist where contentsid=#{contentsid}
+	
+	</select>
+	
+	<select id="getTotalCount" parameterType="String" resultType="int">
+		select count(*) from spotreview where memNum=#{memNum}
+	
+	</select>
+	
+	<select id="getShareSubject" parameterType="String" resultType="String">
+		select subject from shareboard where num=#{num}
+	
+	</select>
+	
+	<select id="getWishTotalCount" parameterType="String" resultType="int">
+		select  count(*) from wishlist where memId=#{memId}
+	</select>
+
+
+	<select id="getDayMyto" parameterType="HashMap" resultType="wishlist">
+		select * from wishlist where memId=#{memId} and wishday=#{day}
+	</select>
+	
+	<select id="getPlanList" parameterType="HashMap" resultType="wishlist">
+		select * from wishlist where memId=#{memId} and 
+		<if test="category=='today'">
+			wishday=#{day} order by wishtime asc limit 0,#{perPage}
+		</if>
+		<if test="category=='nextDay'">
+			wishday>#{day} order by wishday asc, wishtime asc limit 0,#{perPage}
+		</if>
+	</select>
+</mapper>

@@ -1,0 +1,175 @@
+.recommendSection {
+    background-image: url('../../../image/recommend.jpg'); 
+    background-size: cover; 
+    background-position: center center;
+}
+
+@media only screen and (max-width:450px){
+    #RecommendPageComp {
+        margin-top: 50px;
+    }
+    .recommendSection {
+        margin-bottom: 100px;
+    }
+    .recomCourse {
+        width: 20vw;
+    }
+    .recomCourse img {
+        height: 15vw;
+    }
+    .recomCourse p {
+        margin-bottom: 10px !important;
+        font-size: 0.6rem;
+    }
+    .recomLastCourse {
+        width: 5vw;
+        font-size: 0.9rem;
+    }
+    .courseDiv {
+        margin: 50px auto;
+        width: 95vw;
+    }
+    .RecomCourseDay {
+        margin: 30px auto
+    }
+    .RecomCourseDayTitle {
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .RecomAddModalTitle {
+        font-weight: 500;
+    }
+    .RecomAddModal {
+        line-height: 50px;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .recomCourse {
+        width: 15vw;
+    }
+    .recomCourse img {
+        height: 13vw;
+    }
+    .recomCourse p {
+        margin-bottom: 10px !important;
+        font-size: 0.6rem;
+    }
+    .recomLastCourse {
+        width: 5vw;
+        font-size: 0.9rem;
+    }
+    .courseDiv {
+        margin: 80px auto;
+        width: 80vw;
+    }
+    .RecomCourseDay {
+        margin: 50px auto
+    }
+    .RecomCourseDayTitle {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    .RecomAddModalTitle {
+        font-weight: 500;
+    }
+    .RecomAddModal {
+        line-height: 50px;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .recomCourse {
+        width: 15vw;
+    }
+    .recomCourse img {
+        height: 13vw;
+    }
+    .recomCourse p {
+        margin-bottom: 10px !important;
+        font-size: 0.8rem;
+    }
+    .recomLastCourse {
+        width: 5vw;
+        font-size: 1rem;
+    }
+    .courseDiv {
+        margin: 80px auto;
+        width: 80vw;
+    }
+    .RecomCourseDay {
+        margin: 50px auto
+    }
+    .RecomCourseDayTitle {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .RecomAddModalTitle {
+        font-weight: 500;
+    }
+    .RecomAddModal {
+        line-height: 50px;
+    }
+}
+@media only screen and (min-width:1023px) and (max-width:1500px){
+    .recomCourse {
+        width: 15vw;
+    }
+    .recomCourse img {
+        height: 13vw;
+    }
+    .recomCourse p {
+        margin-bottom: 10px !important;
+    }
+    .recomLastCourse {
+        width: 5vw;
+        font-size: 1.2rem;
+    }
+    .courseDiv {
+        margin: 80px auto;
+        width: 80vw;
+    }
+    .RecomCourseDay {
+        margin: 50px auto;
+    }
+    .RecomCourseDayTitle {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .RecomAddModalTitle {
+        font-weight: 500;
+    }
+    .RecomAddModal {
+        line-height: 50px;
+    }
+}
+@media only screen and (min-width:1500px){
+    .recomCourse {
+        width: 15vw;
+    }
+    .recomCourse img {
+        height: 13vw;
+    }
+    .recomCourse p {
+        margin-bottom: 10px !important;
+    }
+    .recomLastCourse {
+        width: 5vw;
+        font-size: 1.5rem;
+    }
+    .courseDiv {
+        margin: 80px auto;
+        width: 80vw;
+    }
+    .RecomCourseDay {
+        margin: 50px auto;
+    }
+    .RecomCourseDayTitle {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .RecomAddModalTitle {
+        font-weight: 500;
+    }
+    .RecomAddModal {
+        line-height: 50px;
+    }
+}

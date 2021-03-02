@@ -1,0 +1,275 @@
+.ShipSection {
+    background-image: url('../../../image/Reser_udo.jpg'); 
+    background-size: cover; 
+    background-position: center center;
+}
+
+@media only screen and (max-width:450px){
+    .ShipIntro {
+        padding: 2rem 0.5rem;
+    }
+    .ShipTitle h1 {
+        font-size: 2rem;
+    }
+    .ShipTitle h5 {
+        line-height: 30px;
+        font-size: 0.9rem;
+    }
+    .ShipTabs {
+        margin: 60px 0;
+    }
+    .ShipTabs div {
+        width: 70vw;
+    }
+    .ShipTabs select {
+        margin-top: 30px;
+        width: 50vw;
+    }
+    
+    /* 일정추가 모달 */
+    .ShipAddModal h4 {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .ShipAddModal {
+        padding: 20px;
+        line-height: 30px;
+    }
+    .ShipAddModal b {
+        font-weight: 500;
+    }
+    .ShipAddModal input, .ShipAddModal select {
+        margin-bottom: 10px;
+    }
+
+    /* table intro */
+    .detailIntro b {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    
+    /* 배편 시간표 */
+    .ShipTable {
+        margin: 100px auto;
+        width: 90vw;
+    }
+    .ShipTable table tr td {
+        font-size: 0.7rem;
+    }
+    .ShipTable table thead td {
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    .ShipNotice {
+        line-height: 25px;
+        margin-bottom: 80px;
+        font-size: 0.7rem;
+    }
+    .ShipTable table caption {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .ShipIntro {
+        padding: 2rem;
+    }
+    .ShipTitle h1 {
+        font-size: 2.3rem;
+    }
+    .ShipTitle h5 {
+        line-height: 30px;
+        font-size: 0.9rem;
+    }
+    .ShipTabs {
+        margin: 80px 0;
+    }
+    .ShipTabs div {
+        width: 70vw;
+    }
+    .ShipTabs select {
+        margin-top: 30px;
+        width: 50vw;
+    }
+    
+    /* 일정추가 모달 */
+    .ShipAddModal h4 {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+    .ShipAddModal {
+        padding: 25px;
+        line-height: 30px;
+    }
+    .ShipAddModal b {
+        font-weight: 500;
+    }
+    .ShipAddModal input, .ShipAddModal select {
+        margin-bottom: 10px;
+    }
+
+    /* table intro */
+    .detailIntro b {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    /* 배편 시간표 */
+    .ShipTable {
+        margin: 100px auto;
+        width: 90vw;
+    }
+    .ShipTable table tr td {
+        font-size: 0.8rem;
+    }
+    .ShipTable table thead td {
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .ShipNotice {
+        line-height: 30px;
+        margin-bottom: 100px;
+        font-size: 0.8rem;
+    }
+    .ShipTable table caption {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .ShipIntro {
+        padding: 3rem;
+    }
+    .ShipTitle h1 {
+        font-size: 2.5rem;
+    }
+    .ShipTitle h5 {
+        line-height: 30px;
+        font-size: 1.1rem;
+    }
+    .ShipTabs {
+        margin: 100px;
+    }
+    .ShipTabs div {
+        width: 50vw;
+    }
+    .ShipTabs select {
+        margin-top: 30px;
+        width: 30vw;
+    }
+    
+    /* 일정추가 모달 */
+    .ShipAddModal h4 {
+        font-weight: 500;
+    }
+    .ShipAddModal {
+        padding: 30px;
+        line-height: 35px;
+    }
+    .ShipAddModal b {
+        font-weight: 500;
+    }
+    .ShipAddModal input, .ShipAddModal select {
+        margin-bottom: 10px;
+    }
+
+    /* table intro */
+    .detailIntro b {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    /* 배편 시간표 */
+    .ShipTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    .ShipTable table thead td {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .ShipNotice {
+        line-height: 30px;
+        margin-bottom: 100px;
+        font-size: 0.9rem;
+    }
+    .ShipTable table caption {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width:1023px){
+    .ShipIntro {
+        padding: 3rem;
+    }
+    .ShipTitle h5 {
+        line-height: 30px;
+    }
+    .ShipTabs {
+        margin: 100px;
+    }
+    .ShipTabs div {
+        width: 50vw;
+    }
+    .ShipTabs select {
+        margin-top: 30px;
+        width: 30vw;
+    }
+
+    /* 일정추가 모달 */
+    .ShipAddModal h4 {
+        font-weight: 500;
+    }
+    .ShipAddModal {
+        padding: 30px;
+        line-height: 35px;
+    }
+    .ShipAddModal b {
+        font-weight: 500;
+    }
+    .ShipAddModal input, .ShipAddModal select {
+        margin-bottom: 10px;
+    }
+
+    /* table intro */
+    .detailIntro b {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    /* 배편 시간표 */
+    .ShipTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    .ShipTable table thead td {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .ShipNotice {
+        line-height: 30px;
+        margin-bottom: 100px;
+    }
+    .ShipTable table caption {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+}
+
+/* 배편 시간표 */
+.ShipTable table {
+    text-align: center;
+}
+.ShipTable table td {
+    vertical-align: middle;
+}
+.ShipTable thead {
+    background-color: #fafafa;
+}
+.ShipNotice b {
+    font-weight: 500;
+}

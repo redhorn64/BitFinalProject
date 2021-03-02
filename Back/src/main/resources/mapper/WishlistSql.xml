@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.jeju.mapper.WishlistMapper">
+	<insert id="insertAround" parameterType="wishlist">
+		insert into wishlist (memId,aroundId,content,wishday,wishtime,money)
+		 values (#{memId},#{aroundId},#{content},#{wishday},#{wishtime},#{money})
+	
+	</insert>
+	<insert id="insertSpot" parameterType="wishlist">
+		insert into wishlist (memId,spotId,content,wishday,wishtime,money)
+		 values (#{memId},#{spotId},#{content},#{wishday},#{wishtime},#{money})
+		
+	</insert>
+	<select id="isSpotSearch" parameterType="HashMap" resultType="int">
+		select count(*) from wishlist where spotId=#{spotId} and memId=#{memId}
+	
+	</select>
+	
+	<select id="isShareSearch" parameterType="String" resultType="int">
+		select count(*) from wishlist where shareNum=#{shareNum}
+	</select>
+	
+	<insert id="insertContent" parameterType="wishlist">
+		insert into wishlist (memId,content,wishday,wishtime,money)
+		 values (#{memId},#{content},#{wishday},#{wishtime},#{money})
+	</insert>
+	
+	<insert id="insertshare" parameterType="wishlist">
+		insert into wishlist (memId,shareNum,content,wishday,wishtime,money)
+		 values (#{memId},#{shareNum},#{content},#{wishday},#{wishtime},#{money})
+	</insert>
+	
+	
+	<delete id="deleteContent" parameterType="String">
+		delete from wishlist where num=#{num}
+	</delete>
+	
+	<select id="getList" parameterType="String" resultType="wishlist">
+		select * from wishlist where memId=#{memId} order by wishday asc, wishtime asc
+	</select>
+	
+	<select id="getBudget" parameterType="HashMap" resultType="wishlist">
+		select * from wishlist where wishday>=#{wishday1} And 
+
+		wishday &lt;= #{wishday2} 
+		and memId=#{memId} and (not money is null or not capital is null) ORDER BY wishday
+	</select>
+
+	<select id="getBudgetSum" parameterType="HashMap" resultType="wishlist">
+		select * from wishlist where wishday>=#{wishday1} And 
+		wishday &lt;= #{wishday2} 
+		and memId=#{memId} and not money is null
+	</select>
+	<insert id="insertCapital" parameterType="wishlist">
+		insert into wishlist (memId,content,wishday,capital)
+		 values (#{memId},#{content},#{wishday},#{capital})
+	</insert>
+
+	<select id="getCapitalSum" parameterType="HashMap" resultType="wishlist">
+		select * from wishlist where wishday>=#{wishday1} And 
+		wishday &lt;= #{wishday2} 
+		and memId=#{memId} and not capital is null
+	</select>
+	
+	<select id="getMyreviews" parameterType="HashMap" resultType="spotreview">
+		select * from spotreview where memNum=#{memNum} order by num desc limit #{start},#{end}
+	</select>
+	<select id="getRecentreviews" parameterType="String" resultType="spotreview">
+		select * from spotreview where memNum=#{memNum} order by num desc limit 1,5
+	</select>
+	
+	<select id="getSpottitle" parameterType="String" resultType="String">
+		select title from spotlist where contentsid=#{contentsid}
+	</select>
+	
+	<select id="getTotalCount" parameterType="String" resultType="int">
+		select count(*) from spotreview where memNum=#{memNum}
+	</select>
+	
+	<select id="getShareSubject" parameterType="String" resultType="String">
+		select subject from shareboard where num=#{num}
+	</select>
+	
+	<select id="getWishTotalCount" parameterType="String" resultType="int">
+		select  count(*) from wishlist where memId=#{memId}
+	</select>
+
+
+	<select id="getDayMyto" parameterType="HashMap" resultType="wishlist">
+		select * from wishlist where memId=#{memId} and wishday=#{day} order by wishtime asc
+	</select>
+	
+	<select id="getPlanList" parameterType="HashMap" resultType="wishlist">
+		select * from wishlist where memId=#{memId} and 
+		<if test="category=='today'">
+			wishday=#{day} order by wishtime asc
+		</if>
+		<if test="category=='nextDay'">
+			wishday>#{day} order by wishday asc, wishtime asc limit 0, 5
+		</if>
+	</select>
+	
+
+	<select id="getmonthlist" parameterType="HashMap" resultType="wishlist">
+		select * from wishlist where memId=#{memId} and wishday=#{wishday}
+	</select>
+	<select id="getSpot" parameterType="String" resultType="spotlist">
+		select * from spotlist where contentsid=#{contentsid}
+	</select>
+</mapper>

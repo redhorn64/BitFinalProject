@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.jeju.mapper.ChatMapper">
+	<insert id="createRoom" parameterType="chatroom">
+		insert into chatroom(user1, user2) values (#{user1}, #{user2})
+	</insert>
+
+	<select id="getRoom" parameterType="String" resultType="chatroom">
+		select * from chatroom where user1=#{user} or user2=#{user} order by num desc
+	</select>
+
+	<insert id="insertMsg" parameterType="chatmsg">
+		insert into chatmsg(roomNum, msg, sender, writeday) values (#{roomNum}, #{msg}, #{sender}, now())
+	</insert>
+
+	<select id="getMsgs" parameterType="String" resultType="chatmsg">
+		select * from chatmsg where roomNum=#{roomNum} order by num asc
+	</select>
+
+	<select id="getSearchIdRoom" parameterType="HashMap" resultType="chatroom">
+		select * from chatroom where user1=#{user} and user2=#{searchId} or user1=#{searchId} and user2=#{user}
+	</select>
+
+	<select id="getLastMsg" parameterType="String" resultType="chatmsg">
+		select * from chatmsg where roomNum=#{roomNum} order by num desc
+	</select>
+
+	<select id="getMsgTotalCount" parameterType="String" resultType="int">
+		select count(*) from chatmsg where roomNum=#{roomNum}
+	</select>
+
+	<select id="idCheckOfChat" parameterType="HashMap" resultType="int">
+		select count(*) from chatroom where user1=#{user} and user2=#{searchId} or user1=#{searchId} and user2=#{user}
+	</select>
+</mapper>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.jeju.mapper.ShareplanMapper">
+
+	  <select id="getSharePlanList" parameterType="HashMap" resultType="shareplan">
+		select * from shareplan group by groupNum order by groupNum desc limit #{start},#{perPage}  
+	</select>  
+	
+	<!-- <select id="getmemId" resultType="shareplan">
+		select distinct memId from shareplan
+	</select> -->
+	
+	<select id="getTotalCount" resultType="int" parameterType="String">
+		select count(distinct groupNum) from shareplan where memId=#{memId}
+	</select>
+	
+	<select id="getData" parameterType="String" resultType="shareplan">
+		select * from shareplan where wishNum=#{wishNum}
+	</select>
+	
+	<!-- <select id="getGroupData" parameterType="HashMap" resultType="shareplan">
+		select * from shareplan where memId=#{memId} and wishday=#{wishday}
+	</select> -->
+	
+	<insert id="insert" parameterType="shareplan">
+		insert into shareplan(groupNum, memId, title, content, wishday, wishtime, comment, wishNum) 
+			values (#{groupNum}, #{memId}, #{title}, #{content}, #{wishday}, #{wishtime}, #{comment}, #{wishNum})
+	</insert>
+	
+	<delete id="delete" parameterType="String">
+		delete from shareplan where num=#{num}
+	</delete>
+	
+	<select id="maxGroupNum" resultType="String">
+		select ifnull(max(groupNum),0) from shareplan
+	</select>
+	<!-- <select id="getgroup" resultType="shareplan" parameterType="String">
+		select * from shareplan where groupNum=#{groupNum}
+	</select> -->
+	<select id="getgroupnum" resultType="shareplan">
+		select distinct groupNum from shareplan order by wishday
+	</select>
+	<select id="getAllgroupnum" parameterType="HashMap" resultType="shareplan">
+		select distinct groupNum from shareplan order by wishday desc limit #{start},#{perPage}
+	</select>
+	<select id="getAllTotalCount" resultType="int">
+		select count(distinct groupNum) from shareplan
+	</select>
+	
+	<select id="getgroupnumDay" parameterType="String" resultType="String">
+		select distinct wishday from shareplan where groupNum=#{groupNum}
+	</select>
+	
+	<select id="getgroupdata" parameterType="String" resultType="shareplan">
+		select * from shareplan where groupNum=#{groupNum} order by wishtime asc
+	</select>
+	
+	<select id="getPlan" parameterType="String" resultType="shareplan">
+		select distinct groupNum,memId from shareplan where wishday=#{wishday}
+	</select>
+	
+	<delete id="groupdelete" parameterType="String">
+		delete from shareplan where groupNum=#{groupNum}
+	</delete>
+	
+	<select id="getList" parameterType="String" resultType="shareplan">
+		select title,wishtime from shareplan where wishday=#{wishday} order by wishtime asc
+	
+	</select>
+	<select id="getplancount" resultType="int" parameterType="String">
+		select count(*) from shareplan where groupNum=#{groupNum}
+	</select>
+	<!-- <select id="groupnumList" resultType="shareplan">
+		select distinct groupNum from shareplan
+	</select>
+	<select id="getAllgroupnum" resultType="shareplan">
+		select groupNum from shareplan
+	</select> -->
+	
+</mapper>

@@ -1,0 +1,194 @@
+@media only screen and (max-width:450px){
+    #mypageTabs .MuiBox-root{
+        padding: 0;
+    }
+    div#mypageInfo {
+        padding: 10px 10px 10px 10px;
+        /* height: 300px; */
+        margin-top: 40px;
+        margin-bottom: 200px;
+    }
+    p#mypageInfoTitle{
+        font-weight: 500;
+        font-size: 13pt;
+    }
+    .mypageInfoCol {
+        padding: 10px; 
+        /* line-height: 15px; */
+    }
+    .mypageInfoCol td {
+        font-size: 0.5rem !important;
+        line-height: 20px;
+    }
+    img#mypageUserImg {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+    }
+    button#mypageInfoBtn {
+        top: 10px;
+        right: 10px;
+        background-color: #fff;
+        font-size: 5pt;
+    }
+    div#mypageInfo>table {
+        width: 100%; 
+        border-spacing: 5px;
+        border-collapse: inherit;
+    }
+    span.mypageInfoSubtitle {
+        font-size: 8pt;
+        font-weight: 500;
+    }
+    span.mypageInfoSubContent {
+        font-size: 6pt;
+        line-height: 40px;
+        color: #aaa;
+    }
+    .MuiTab-root {
+        font-weight: 500;
+        font-size: 9pt !important;
+    }
+    #mypagePassCheck {
+        margin-top: 100px;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    div#mypageInfo {
+        padding: 10px 20px 20px 10px;
+        /* height: 300px; */
+        margin-top: 50px;
+    }
+    p#mypageInfoTitle{
+        font-weight: 500;
+        font-size: 18pt;
+    }
+    .mypageInfoCol {
+        padding: 10px; 
+    }
+    .mypageInfoCol td {
+        font-size: 0.6rem !important;
+        line-height: 25px;
+    }
+    img#mypageUserImg {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+    }
+    button#mypageInfoBtn {
+        top: 20px;
+        right: 30px;
+        background-color: #fff;
+        font-size: 8pt;
+    }
+    div#mypageInfo>table {
+        width: 100%; 
+        border-spacing: 10px;
+        border-collapse: inherit;
+    }
+    span.mypageInfoSubtitle {
+        font-size: 10pt;
+        font-weight: 500;
+    }
+    span.mypageInfoSubContent {
+        font-size: 8pt;
+        line-height: 50px;
+        color: #aaa;
+    }
+    .MuiTab-root {
+        font-weight: 500;
+        font-size: 10pt !important;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    div#mypageInfo {
+        padding: 20px 50px 20px 50px;
+        /* height: 300px; */
+        margin-top: 80px;
+    }
+    p#mypageInfoTitle{
+        font-weight: 500;
+        font-size: 20pt;
+    }
+    .mypageInfoCol {
+        padding: 10px; 
+        line-height: 25px;
+    }
+    .mypageInfoCol td {
+        font-size: 0.7rem !important;
+    }
+    img#mypageUserImg {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+    }
+    button#mypageInfoBtn {
+        top: 20px;
+        right: 50px;
+        background-color: #fff;
+        font-size: 8pt;
+    }
+    div#mypageInfo>table {
+        width: 100%; 
+        border-spacing: 15px;
+        border-collapse: inherit;
+    }
+    span.mypageInfoSubtitle {
+        /* font-size: 12pt; */
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    span.mypageInfoSubContent {
+        font-size: 10pt;
+        line-height: 50px;
+        color: #aaa;
+    }
+}
+@media only screen and (min-width:1023px){
+    div#mypageInfo {
+        padding: 20px 80px 20px 80px;
+        /* height: 400px; */
+        margin-top: 100px;
+    }
+    p#mypageInfoTitle{
+        font-weight: 500;
+        font-size: 25pt;
+    }
+    .mypageInfoCol {
+        padding: 20px !important; 
+        line-height: 35px;
+    }
+    img#mypageUserImg {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+    }
+    button#mypageInfoBtn {
+        top: 20px;
+        right: 80px;
+        background-color: #fff;
+    }
+    div#mypageInfo>table {
+        width: 100%; 
+        border-spacing: 20px;
+        border-collapse: inherit;
+    }
+    span.mypageInfoSubtitle {
+        font-size: 15pt;
+        font-weight: 500;
+    }
+    span.mypageInfoSubContent {
+        font-size: 13pt;
+        line-height: 70px;
+        color: #aaa;
+    }
+    .MuiTab-root {
+        font-weight: 500;
+        font-size: 15pt !important;
+    }
+
+}

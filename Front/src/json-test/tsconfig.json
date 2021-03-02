@@ -1,0 +1,188 @@
+/*http://localhost:9002/notice/list
+[
+  {
+    "num": "32",
+    "subject": "글 테스트용 올려요",
+    "content": "글 올립니다 올려요",
+    "writeday": "2020-12-09 02:06",
+    "readcount": 22,
+    "star": "0"
+  },
+  {
+    "num": "33",
+    "subject": "글이 들어 갑니다...",
+    "content": "<p>글이 들어간다 쭉쭉쭉쭉쭉</p><p><img src=\"/SemiProject/save/2020_12_09_020929.jpg\">&nbsp;</p>",
+    "writeday": "2020-12-09 02:09",
+    "readcount": 19,
+    "star": "0"
+  },
+  {
+    "num": "34",
+    "subject": "***201209 업데이트 공지***",
+    "content": "<p><span style=\"font-size: 10pt;\">201209 업데이트 공지 올립니다</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><span style=\"font-size: 10pt;\">이번 업데이트를 통해 총 3가지 기능이 추가되었습니다.</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span style=\"font-size: 18pt;\">첫번째.&nbsp;<span style=\"font-size: 10pt;\">﻿기존 MyPage에 자신의 일정을 추가</span></span></p><p><span style=\"font-size: 10pt;\">﻿기존에는 제주도의 관광명소나 맛집만 추가 할 수 있었지만,&nbsp;</span></p><p><span style=\"font-size: 10pt;\">이번 업데이트를 통해서 자신의 개인적인 일정도 직접 추가 할 수 있게 하였습니다.</span></p><p><span style=\"font-size: 13.3333px;\">그동안 제주도 관광 갈때 외에 묵혀두었던 아이디와 비밀번호.&nbsp;</span></p><p><span style=\"font-size: 13.3333px;\">다시 꺼내어 쓰시면서 편리하게 일정관리 하세요^^</span></p><p><span style=\"font-size: 10pt;\">&nbsp;</span></p><p><span style=\"font-size: 24px;\">두번째. <span style=\"font-size: 10pt;\">﻿공유게시판의 답글 기능 추가</span></span></p><p><span style=\"font-size: 10pt;\">﻿항상 본문글에 댓글달기만 가능했던 공유게시판.</span>&nbsp;</p><p><span style=\"font-size: 13.3333px;\">이제 댓글에도 답글을 달 수 있게하여 많은 회원분들이 댓글에 의견을 말 할 수 있게 하였습니다.</span></p><p><span style=\"font-size: 13.3333px;\">답글 기능을 통하여 회원 분들의 소통이 활발히 이어지기 바라며,</span></p><p><span style=\"font-size: 13.3333px;\">만약 비속어나 음란성 댓글, 비난 댓글이 보일경우 삭제 처리 되니 이 점 인지하신 후 이용해주세요!</span></p><p><span style=\"font-size: 13.3333px;\">&nbsp;</span></p><p><span style=\"font-size: 13.3333px;\">&nbsp;</span></p><p><span style=\"font-size: 13.3333px;\">앞으로도 저희 멘도롱 소랑은 회원분들의 편리한 제주도 관광을 위해 노력하겠습니다</span></p><p><span style=\"font-size: 13.3333px;\">감사합니다.</span></p><p>&nbsp;</p><br>",
+    "writeday": "2020-12-09 02:23",
+    "readcount": 14,
+    "star": "1"
+  },
+  {
+    "num": "35",
+    "subject": "안내드립니다.",
+    "content": "<p><span style=\"font-size: 10pt;\">﻿현재 음란성 글이나 리뷰, 댓글을 다시는 분들이 있어서 안내말씀 드립니다.</span></p><p>&nbsp;</p><p><span style=\"font-size: 13.3333px;\">다양한 연령대의 회원들이 이용하는 저희 멘도롱소랑에서 음란성 글. 댓글을 포함하여</span></p><p><span style=\"font-size: 13.3333px;\">타회원을 비난하는 댓글, 리뷰 등이 발견되고 있는데.</span></p><p><span style=\"font-size: 13.3333px;\">발견 즉시 해당 댓글을 삭제할 예정이며, 이는 정지뿐만아니라 회원 탈퇴의 사유가 될 수 있으니&nbsp;</span><span style=\"font-size: 13.3333px;\">주의 부탁드립니다.&nbsp;</span></p><p><span style=\"font-size: 13.3333px;\">또 문제되는 댓글을 발견하신 경우 help@naver.com 으로 알려주시면 바로 조치를 취하겠습니다.</span></p><p><span style=\"font-size: 13.3333px;\">감사합니다.</span></p><p><span style=\"font-size: 13.3333px;\">&nbsp;</span></p><p><span style=\"font-size: 13.3333px;\">&nbsp;</span></p><p><span style=\"font-size: 13.3333px;\">-----------------------------------------------------------------------------------------------------</span></p><p><span style=\"font-size: 13.3333px;\">ps. 이렇게 처리하기전에 주의 부탁드려요^^</span></p><p><span style=\"font-size: 13.3333px;\"><img src=\"/SemiProject/save/2020_12_09_023142.gif\">&nbsp;</span></p><p>&nbsp;</p>",
+    "writeday": "2020-12-09 02:32",
+    "readcount": 15,
+    "star": "0"
+  },
+  {
+    "num": "36",
+    "subject": "코로나 19로 인한 관광명소, 축제 안내",
+    "content": "<p><span style=\"font-size: 10pt;\">현재 코로나 19로 많은 관광명소가 휴무하거나&nbsp;</span></p><p><span style=\"font-size: 10pt;\">축제가 온라인으로 진행되는 경우가 많습니다.</span></p><p><span style=\"font-size: 10pt;\">&nbsp;</span></p><p><span style=\"font-size: 10pt;\">제주도 여행 계획하실 때 차질 없으시길 부탁드리며</span></p><p><span style=\"font-size: 14pt;\"><span style=\"font-size: 10pt;\">코로나 19가 끝날때까지 모두 건강하시길 바랍니다</span>.</span></p><p>&nbsp;</p><p>&nbsp;</p><p><img src=\"/SemiProject/save/2020_12_09_053733.jpg\">&nbsp;</p><br><br><br>",
+    "writeday": "2020-12-09 02:38",
+    "readcount": 18,
+    "star": "0"
+  },
+  {
+    "num": "37",
+    "subject": "사담) 여러분 모두 축하해주세요",
+    "content": "<p><span style=\"font-size: 10pt;\">﻿여러분 축하해주세요</span></p><p><span style=\"font-size: 13.3333px;\">드디어 제가 휴가를 얻었습니다!!!</span></p><p>&nbsp;</p><p>+)그걸 기념해서 즐거운 짤 하나 올리고 관리자는 휴가갈게요~★</p><p>&nbsp;</p><p><span style=\"font-size: 13.3333px;\"><img src=\"/SemiProject/save/2020_12_09_024118.gif\">&nbsp;</span></p>",
+    "writeday": "2020-12-09 02:42",
+    "readcount": 23,
+    "star": "1"
+  },
+  {
+    "num": "38",
+    "subject": "사담) 하....",
+    "content": "<p><span style=\"font-size: 10pt;\">여러분...메인화면 오류가 나서 죄송합니다....</span></p><p><span style=\"font-size: 10pt;\">﻿</span>&nbsp;</p><p><span style=\"font-size: 13.3333px;\">저는 공지사항 관리자로 권한이 없구요...</span></p><p><span style=\"font-size: 13.3333px;\">대신 메인화면 관리자를 제가 처리하고 오겠습니다...</span></p><p><span style=\"font-size: 13.3333px;\">회원 여러분들 죄송합니다.....</span></p><p><span style=\"font-size: 13.3333px;\">&nbsp;</span></p><p><span style=\"font-size: 13.3333px;\">&nbsp;</span></p><p>&nbsp;</p><p><img src=\"/SemiProject/save/2020_12_09_024319.jpg\"></p>",
+    "writeday": "2020-12-09 02:45",
+    "readcount": 19,
+    "star": "1"
+  }
+]
+*/
+
+/*http://localhost:9002/share/list?start=0&perPage=5
+[
+  {
+    "num": "353",
+    "id": null,
+    "subject": null,
+    "content": null,
+    "addr": null,
+    "photo": "no",
+    "likes": 0,
+    "regroup": 353,
+    "restep": 0,
+    "relevel": 0,
+    "star": "4",
+    "writeday": "2021-01-19"
+  },
+  {
+    "num": "347",
+    "id": null,
+    "subject": "제주",
+    "content": null,
+    "addr": null,
+    "photo": "jeju20210119150700.png",
+    "likes": 0,
+    "regroup": 347,
+    "restep": 0,
+    "relevel": 0,
+    "star": "4",
+    "writeday": "2021-01-19"
+  },
+  {
+    "num": "346",
+    "id": null,
+    "subject": null,
+    "content": null,
+    "addr": null,
+    "photo": "jeju20210119150526.png",
+    "likes": 0,
+    "regroup": 310,
+    "restep": 0,
+    "relevel": 0,
+    "star": "4",
+    "writeday": "2021-01-19"
+  },
+  {
+    "num": "309",
+    "id": "minjj",
+    "subject": "마레이나",
+    "content": "분위기 좋고 예뻐요 ㅎㅎ 인스타용 카페",
+    "addr": "제주도 어딘가",
+    "photo": "11",
+    "likes": 0,
+    "regroup": 309,
+    "restep": 0,
+    "relevel": 0,
+    "star": "5",
+    "writeday": "2020-12-09"
+  },
+  {
+    "num": "308",
+    "id": "minjj",
+    "subject": "순천미향",
+    "content": "쵸큼 비싼데 맛나요",
+    "addr": "제주도 서귀포",
+    "photo": "D113C2B2-F634-41FF-8C94-9FEAA04366A5_1_105_c.png",
+    "likes": 0,
+    "regroup": 308,
+    "restep": 0,
+    "relevel": 0,
+    "star": "4",
+    "writeday": "2020-12-09"
+  }
+]
+*/
+
+/*
+[
+  {
+    "contentsid": "CNTS_000000000022243",
+    "title": "(주)제주해양레저 투명카약",
+    "label1": "제주시",
+    "label2": "애월",
+    "roadaddr": "제주특별자치도 제주시 애월읍 애월로1길 22",
+    "addr": "제주특별자치도 제주시 애월읍 애월리 2490-1",
+    "latitude": "33.4623530000",
+    "longitude": "126.3104900000",
+    "tag": "해수욕장,액티비티,친구,커플,맑음",
+    "introduction": "애월&한담의 에메랄드빛 아름다운 제주바다를 가장 가까이 즐기는 법!",
+    "img": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/df33fa41-5bb6-4276-a369-e77f1a885ba7.jpg",
+    "thumbnail": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/59421792-5377-46a8-a68d-b4f1fe1de5aa.jpg",
+    "star": 0,
+    "likes": 0
+  },
+  {
+    "contentsid": "CNTS_000000000021772",
+    "title": "1100고지(휴게소)",
+    "label1": "서귀포시",
+    "label2": "서귀포시내",
+    "roadaddr": "제주특별자치도 서귀포시 1100로 1555",
+    "addr": "제주특별자치도 서귀포시 색달동 산 1-3",
+    "latitude": "33.3399120000",
+    "longitude": "126.4368200000",
+    "tag": "산,경관/포토,흐림,겨울",
+    "introduction": "겨울이면 더욱 아름다운 한라산 대표적인 뷰포인트",
+    "img": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/c7b1b74e-7e43-4d35-ba10-2529d44090ec.jpg",
+    "thumbnail": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/4766a6b8-de7e-4633-adf5-31a8cc273c72.jpg",
+    "star": 0,
+    "likes": 0
+  },
+  {
+    "contentsid": "CNTS_000000000019595",
+    "title": "1112도로",
+    "label1": "제주시",
+    "label2": "제주시내",
+    "roadaddr": "제주특별자치도 제주시 명림로 584 (봉개동)",
+    "addr": "제주특별자치도 제주시 봉개동 산 78-1",
+    "latitude": "33.4393730000",
+    "longitude": "126.6284500000",
+    "tag": "산,드라이브,흐림",
+    "introduction": "‘대한민국에서 가장 아름다운 도로' 중 하나로 길 양 옆으로 하늘로 곧게 뻗은 삼나무들이 병풍처럼 펼쳐져 있는 도로",
+    "img": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/db786ce9-8467-4db0-a617-00c099cdf65a.gif",
+    "thumbnail": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/a89b66af-6d8e-4e49-bb0d-781bfb7bfbc0.gif",
+    "star": 0,
+    "likes": 7
+  }
+]
+*/

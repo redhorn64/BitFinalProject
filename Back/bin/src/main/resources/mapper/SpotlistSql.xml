@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.jeju.mapper.SpotlistMapper">
+	<select id="getList" parameterType="HashMap" resultType="spotlist">
+		<if test="select=='star'">
+			select * from spotlist where label2 like CONCAT('%',#{label2},'%') order by star desc, title asc limit #{start},#{perPage}
+		</if>
+		<if test="select=='likes'">
+			select * from spotlist where label2 like CONCAT('%',#{label2},'%') order by likes desc, title asc limit #{start},#{perPage}
+		</if>
+		<if test="select=='title'">
+			select * from spotlist where label2 like CONCAT('%',#{label2},'%') order by title asc limit #{start},#{perPage}
+		</if>
+	</select>
+	
+	<select id="getTotalCount" parameterType="String" resultType="int">
+		select count(*) from spotlist where label2 like CONCAT('%',#{label2},'%')
+	</select>
+	
+	<select id="getSearchList" parameterType="HashMap" resultType="spotlist">
+		<if test="category == 'all'">
+			select * from spotlist where label1 like CONCAT('%',#{search},'%') or label2 like CONCAT('%',#{search},'%') or title like CONCAT('%',#{search},'%') 
+					or roadaddr like CONCAT('%',#{search},'%')' or addr like CONCAT('%',#{search},'%') or tag like CONCAT('%',#{search},'%') 
+					order by title asc limit #{start},#{perPage}
+		</if>
+		<if test="category == 'area'">
+			select * from spotlist where label2 like CONCAT('%',#{search},'%') order by title asc limit #{start},#{perPage}
+		</if>
+		<if test="category == 'spot'">
+			select * from spotlist where title like CONCAT('%',#{search},'%') order by title asc limit #{start},#{perPage}
+		</if>
+		<if test="category == 'tag'">
+			select * from spotlist where tag like CONCAT('%',#{search},'%') order by title asc limit #{start},#{perPage}
+		</if>
+	</select>
+	
+	<select id="getSearchTotalCount" parameterType="HashMap" resultType="int">
+		<if test="category == 'all'">
+			select count(*) from spotlist where label1 like CONCAT('%',#{search},'%') or label2 like CONCAT('%',#{search},'%') or title like CONCAT('%',#{search},'%') 
+					or roadaddr like CONCAT('%',#{search},'%') or addr like CONCAT('%',#{search},'%') or tag like CONCAT('%',#{search},'%')
+		</if>
+		<if test="category == 'area'">
+			select count(*) from spotlist where label2 like CONCAT('%',#{search},'%')
+		</if>
+		<if test="category == 'spot'">
+			select count(*) from spotlist where title like CONCAT('%',#{search},'%')
+		</if>
+		<if test="category == 'tag'">
+			select count(*) from spotlist where tag like CONCAT('%',#{search},'%')
+		</if>
+	</select>
+	
+	<select id="getData" parameterType="String" resultType="spotlist">
+		select * from spotlist where contentsid = #{contentsid}
+	</select>
+	
+	<insert id="insert" parameterType="spotlist">
+		insert into spotlist(contentsid, title, label1, label2, roadaddr, addr, latitude, longitude, tag, introduction, img, thumbnail) 
+			values (#{contentsid}, #{title}, #{label1}, #{label2}, #{roadaddr}, #{addr}, #{latitude}, #{longitude}, #{tag}, #{introduction}, #{img}, #{thumbnail})
+	</insert>
+	
+	<update id="update" parameterType="spotlist">
+		update spotlist set title=#{title}, label1=#{label1}, label2=#{label2}, roadaddr=#{roadaddr}, latitude=#{latitude}, longitude=#{longitude}, 
+			tag=#{tag}, introduction=#{introduction}
+			<if test="img != null">
+				, img=#{img}
+			</if>
+			<if test="thumbnail != null">
+				, thumbnail=#{thumbnail}
+			</if>
+			 where contentsid=#{contentsid}
+	</update>
+	
+	<delete id="delete" parameterType="String">
+		delete from spotlist where contentsid=#{contentsid}
+	</delete>
+	
+	<update id="updateLikes" parameterType="String">
+		update spotlist set likes = likes + 1 where contentsid = #{contentsid}
+	</update>
+	
+	<update id="updateStar" parameterType="HashMap">
+		update spotlist set star = #{avgStar} where contentsid = #{contentsid}
+	</update>
+</mapper>

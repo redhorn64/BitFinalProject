@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.jeju.mapper.ShareboardMapper">
+	<select id="getMaxNum" resultType="int">
+		select ifnull(max(num),0) from shareboard
+
+	</select>
+	<select id="getTotalCount" resultType="int">
+		select count(*) from shareboard where relevel=0 and restep=0
+
+	</select>
+	<select id="getList" parameterType="HashMap" resultType="shareboard">
+		select * from shareboard where relevel=0 and restep=0 order by regroup desc,restep asc limit #{start},#{perPage}
+
+	</select>
+	<insert id="insertBoard" parameterType="shareboard">
+		insert into shareboard (id,subject,content,addr,likes,photo,regroup,restep,relevel,
+		star,writeday) values (#{id},#{subject},#{content},#{addr},#{likes},
+		#{photo},#{regroup},#{restep},#{relevel},#{star},now())
+
+	</insert>
+	<select id="getData" parameterType="String" resultType="shareboard">
+		select * from shareboard where num=#{num}
+
+	</select>
+	<select id="getReviewList" parameterType="int" resultType="shareboard">
+		select * from shareboard where regroup=#{regroup} and relevel!=0 order by restep asc
+
+	</select>
+	
+	<select id="getDelReviewList" parameterType="HashMap" resultType="shareboard">
+		select * from shareboard where regroup=#{regroup} and relevel!=0 and restep > #{restep} order by restep asc
+
+	</select>
+	
+	<update id="updateLikes" parameterType="String">
+
+		update shareboard set likes=likes+1 where num=#{num}
+
+	</update>
+	<update id="updateRestep" parameterType="HashMap">
+		<![CDATA[
+		update shareboard set restep=restep+1 where regroup=#{regroup}
+		and restep>#{restep}
+		]]>
+
+	</update>
+
+	<select id="isGroupStep" parameterType="int">
+		select * from shareboard where regroup=#{regroup} and restep=0
+
+	</select>
+	<select id="isNextStep" parameterType="HashMap" resultType="int">
+		select * from shareboard where regroup=#{regroup} and relevel=#{relevel}
+		and restep=#{restep}
+
+	</select>
+	<delete id="sharedelete" parameterType="HashMap">
+		delete from shareboard where num=#{num} or regroup=#{regroup}
+
+	</delete>
+
+	<delete id="deleteReview" parameterType="String">
+		delete from shareboard where num=#{num}
+	</delete>
+
+	<select id="getCount" parameterType="String" resultType="int">
+		select count(*) from shareboard where regroup=#{regroup} and relevel!=0
+
+	</select>
+
+	<update id="updateShareBoard" parameterType="shareboard">
+		update shareboard set subject=#{subject}, addr=#{addr}
+		<if test="photo!=null">
+		, photo=#{photo}
+		</if>
+		,content=#{content}, star=#{star} where num=#{num}
+
+	</update>
+
+	<select id="getSearchList" parameterType="HashMap" resultType="shareboard">
+		select * from shareboard where addr  like CONCAT('%',#{search},'%') or subject like CONCAT('%',#{search},'%') limit #{start},#{perPage}
+
+	</select>
+
+	<select id="getSearchTotalCount" parameterType="String" resultType="int">
+		select count(*) from shareboard where addr like CONCAT('%',#{search},'%') or subject like CONCAT('%',#{search},'%')
+
+	</select>
+
+	<update id="updateShareBoardAnswer" parameterType="HashMap">
+		update shareboard set content=#{content} where num=#{num}
+
+	</update>
+
+	<select id="getPhotos" parameterType="int" resultType="shareboard">
+		select photo from shareboard where regroup=#{regroup}
+
+	</select>
+	<select id="getNum" resultType="String">
+		select num from shareboard
+	</select>
+
+
+</mapper>

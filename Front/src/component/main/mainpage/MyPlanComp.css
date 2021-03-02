@@ -1,0 +1,324 @@
+.myPlanpagesRoot {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* width: 500px; */
+    /* overflow-x: scroll; */
+}
+/* .myPlanRight {
+    flex-grow: 1;
+} */
+.myPlanParent {
+    display: flex;
+}
+@media only screen and (max-width:450px){
+    .myPlanpagesRoot > * {
+        /* margin: 10px; */
+        /* padding: 10px; */
+        width: 30vw;
+        /* height: 300px; */
+        /* overflow: hidden; */
+    }
+    .myPlanLeft {
+        width: 45vw;
+        height: 250px;
+        padding: 5px;
+        /* overflow: scroll; */
+    }
+    .myPlanLeft > ul {
+        height: 130px;
+    }
+    .myplanLeftList {
+        padding: 0px !important;
+        font-size: 0.7rem !important;
+    }
+    .myplanLeftList span {
+        font-size: 0.7rem !important;
+        font-weight: 500;
+    }
+    .myplanLeftList p {
+        font-size: 0.5rem !important;
+    }
+    .myplanLeftList div.MuiListItemAvatar-root {
+        min-width: 10px !important;
+    }
+    .myplanLeftList div.MuiAvatar-root {
+        width: 20px !important;
+        height: 20px !important;
+        font-size: 0.7rem !important;
+        margin-right: 10px;
+    }
+    .myPlanRight {
+        width: 50vw;
+        height: 250px;
+        padding: 5px;
+    }
+    .myPlanTop5 {
+        width: 90vw !important;
+    }
+    .myPlanRight span, .myPlanLeft > span {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #333;
+    }
+    /* .myPlanRight span {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #444;
+    } */
+    .myplanRightItemBox {
+        padding: 10px;
+        margin-right: 20px;
+        width: 200px;
+        /* width: 40vw; */
+    }
+    .myplanRightItemBox .view {
+        width: 200px !important;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .myplanRightItemBox .mask p {
+        width: 150px !important;
+    }
+    .myplanRightItemBox .view .btn {
+        padding: 0.3rem 1.1rem;
+        font-size: 0.5rem;
+    }
+    .myplanRightItemImg {
+        width: 200px;
+        height: 170px;
+    }
+    #demo-simple-select-outlined, #outlined-basic, .searchButton {
+        font-size: 0.5rem !important;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .myPlanpagesRoot > * {
+        /* margin: 10px; */
+        /* padding: 10px; */
+        width: 30vw;
+        /* height: 300px; */
+        /* overflow: hidden; */
+    }
+    .myPlanLeft {
+        width: 45vw;
+        height: 250px;
+        padding: 10px;
+        /* overflow: scroll; */
+    }
+    .myPlanLeft > ul {
+        height: 200px;
+    }
+    .myplanLeftList {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        font-size: 0.7rem !important;
+    }
+    .myplanLeftList span {
+        font-size: 0.7rem !important;
+        font-weight: 500;
+    }
+    .myplanLeftList p {
+        font-size: 0.5rem !important;
+    }
+    .myplanLeftList div.MuiListItemAvatar-root {
+        min-width: 10px !important;
+    }
+    .myplanLeftList div.MuiAvatar-root {
+        width: 25px !important;
+        height: 25px !important;
+        font-size: 0.7rem !important;
+        margin-right: 10px;
+    }
+    .myPlanRight {
+        width: 50vw;
+        height: 250px;
+        padding: 10px;
+    }
+    .myPlanTop5 {
+        width: 95vw !important;
+    }
+    .myPlanRight span, .myPlanLeft > span {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #333;
+    }
+    /* .myPlanRight span {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #444;
+    } */
+    .myplanRightItemBox {
+        padding: 20px;
+        margin-right: 30px;
+        width: 200px;
+        /* width: 40vw; */
+    }
+    .myplanRightItemBox .view {
+        width: 200px !important;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    .myplanRightItemBox .mask p {
+        width: 200px !important;
+    }
+    .myplanRightItemBox .view .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.6rem;
+    }
+    .myplanRightItemImg {
+        width: 200px;
+        height: 170px;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .myPlanpagesRoot > * {
+        /* margin: 10px; */
+        /* padding: 10px; */
+        width: 30vw;
+        /* height: 300px; */
+        /* overflow: hidden; */
+    }
+    .myPlanLeft {
+        width: 45vw;
+        height: 350px;
+        padding: 10px;
+        /* overflow: scroll; */
+    }
+    .myPlanLeft > ul {
+        height: 250px;
+    }
+    .myplanLeftList {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        font-size: 0.9rem !important;
+    }
+    .myplanLeftList span {
+        font-size: 0.9rem !important;
+        font-weight: 500;
+    }
+    .myplanLeftList p {
+        font-size: 0.7rem !important;
+    }
+    .myplanLeftList div.MuiListItemAvatar-root {
+        min-width: 10px !important;
+    }
+    .myplanLeftList div.MuiAvatar-root {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 0.9rem !important;
+        margin-right: 10px;
+    }
+    .myPlanRight {
+        width: 50vw;
+        height: 350px;
+        padding: 10px;
+    }
+    .myPlanTop5 {
+        width: 95vw !important;
+    }
+    .myPlanRight span, .myPlanLeft > span {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #333;
+    }
+    /* .myPlanRight span {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #444;
+    } */
+    .myplanRightItemBox {
+        padding: 30px;
+        margin-right: 40px;
+        width: 250px;
+        /* width: 40vw; */
+    }
+    .myplanRightItemBox .view {
+        width: 250px !important;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .myplanRightItemBox .mask p {
+        width: 250px !important;
+    }
+    .myplanRightItemBox .view .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.8rem;
+    }
+    .myplanRightItemImg {
+        width: 250px;
+        height: 220px;
+    }
+}
+@media only screen and (min-width:1023px){   
+    .myPlanpagesRoot > * {
+        /* margin: 10px; */
+        /* padding: 10px; */
+        width: 25vw;
+        /* height: 300px; */
+        /* overflow: hidden; */
+    }
+    .myPlanLeft {
+        width: 30vw;
+        height: 400px;
+        padding: 20px 35px;
+        /* margin-top: 50px; */
+        /* overflow: scroll; */
+    }
+    .myPlanLeft > ul {
+        height: 300px;
+    }
+    .myplanLeftList {
+        font-size: 1rem !important;
+        font-weight: 500;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .myplanLeftList p {
+        font-size: 0.8rem !important;
+    }
+    .myPlanRight {
+        width: 40vw;
+        height: 400px;
+        padding: 20px;
+        /* margin-top: 50px; */
+    }
+    .myPlanTop5 {
+        width: 65vw !important;
+    }
+    .myPlanRight span, .myPlanLeft > span {
+        font-size: 1.3rem;
+        font-weight: 500;
+        /* color: #036E38; */
+        color: #333;
+    }
+    /* .myPlanRight span {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #444;
+    } */
+    .myplanRightItemBox {
+        padding: 30px;
+        margin-right: 40px;
+        width: 300px;
+        /* width: 40vw; */
+    }
+    .myplanRightItemBox .view {
+        width: 300px !important;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .myplanRightItemBox .mask p {
+        width: 300px !important;
+    }
+    .myplanRightItemImg {
+        width: 300px;
+        height: 270px;
+    }
+    /* .myplanRightTitle {
+        padding: 10px 20px;
+        width: 60%;
+        background-color: rgba(10, 10, 10, 0.788);
+        font-size: 0.8rem;
+    } */
+
+}

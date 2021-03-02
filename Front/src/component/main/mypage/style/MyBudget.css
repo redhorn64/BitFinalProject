@@ -1,0 +1,82 @@
+@media only screen and (max-width:450px){
+    #MyBudgetDiv {
+        margin: 60px 0 ;
+    }
+    .AddCapitalBtn {
+        padding: 8px 13px !important;
+        font-size: 0.6rem;
+    }
+    .dayselect {
+        font-size: 0.8rem;
+        margin-bottom: 30px !important;
+    }
+    .dayselect input {
+        font-size: 0.8rem;
+        width: 30vw;
+    }
+    #MyBudgetTable {
+        margin: 100px auto;
+        width: 95vw;
+        font-size: 0.8rem;
+    }
+    #MyBudgetMainTable thead td {
+        font-weight: 700;
+    }
+    #MyBudgetMainTable thead td, #MyBudgetMainTable tbody td, #MyBudgetMainTable tfoot td{
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .AddCapitalBtn {
+        padding: 8px 13px !important;
+        font-size: 0.6rem;
+    }
+    .dayselect {
+        font-size: 0.8rem;
+        margin-bottom: 30px !important;
+    }
+    #MyBudgetTable {
+        margin: 100px auto;
+        width: 90vw;
+        font-size: 0.8rem;
+    }
+    #MyBudgetMainTable thead td {
+        font-weight: 700;
+    }
+    #MyBudgetMainTable thead td, #MyBudgetMainTable tbody td, #MyBudgetMainTable tfoot td {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .AddCapitalBtn {
+        padding: 10px 15px !important;
+    }
+    .dayselect {
+        font-size: 0.9rem;
+        margin-bottom: 30px !important;
+    }
+    #MyBudgetTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    #MyBudgetMainTable thead td {
+        font-weight: 700;
+    }
+}
+@media only screen and (min-width:1023px){
+    .AddCapitalBtn {
+        padding: 10px 15px !important;
+    }
+    .dayselect {
+        font-size: 0.9rem;
+        margin-bottom: 30px !important;
+    }
+    #MyBudgetTable {
+        margin: 100px auto;
+        width: 80vw;
+    }
+    #MyBudgetMainTable thead td {
+        font-weight: 700;
+    }
+
+}

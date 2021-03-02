@@ -1,0 +1,17 @@
+.Example {
+    position: relative;
+    padding: 24px 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 32px;
+    user-select: none;
+    box-shadow: 0.2rem 0.2rem 3px 3px rgba(0, 0, 0, 0.15);
+  }
+  
+  @keyframes useRippleAnimation {
+    to {
+      transform: scale(15);
+      opacity: 0;
+    }
+  }
+  

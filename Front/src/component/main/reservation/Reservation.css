@@ -1,0 +1,310 @@
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  .number-input input[type=number]::-webkit-inner-spin-button,
+  .number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  .number-input {
+    margin-bottom: 1rem;
+  }
+  .number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+  }
+  .number-input button:before,
+  .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+  }
+  .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .number-input input[type=number] {
+    text-align: center;
+  }
+  .number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+  }
+  .number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+  }
+  .number-input.number-input button.minus {
+    padding-left: 10px;
+  }
+  .number-input.number-input button:before,
+  .number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+  }
+  .number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+  }
+
+  .AirSection {
+    background-image: url('../../../image/Reser_air.jpg'); 
+    background-size: cover; 
+    background-position: center center;
+}
+
+@media only screen and (max-width:450px){
+    .AirIntro {
+      padding: 2rem 0.5rem;
+    }
+    .AirTitle h1 {
+      font-size: 2rem;
+  }
+    .AirTitle h5 {
+      line-height: 30px;
+      font-size: 0.9rem;
+    }
+    .AirTabs {
+      margin: 60px 0;
+    }
+    .AirTabs > div {
+        width: 90vw;
+    }
+    .AirTabs select {
+        margin-top: 30px;
+        width: 30vw;
+    }
+    .AirTabs button {
+      padding: 7px 12px;
+    }
+    
+    .AirTabTitle b {
+      font-size: 1.8rem;
+      margin : 0 20px;
+    }
+    .AirTabContent input, .AirOneWayPlan input {
+      width: 30vw;
+      font-size: 0.9rem;
+    }
+    .AirTabContent div.AirContentDiv {
+      width: 30vw;
+      height: 30px;
+      font-size: 0.9rem;
+      border-bottom: 0.1px solid white;
+      display: inline-block;
+    }
+    .AirTabContent select {
+      width: 10vw;
+      background-color: rgba(255, 255, 255, 0);
+      color: white;
+      border-radius: 0;
+      border: none;
+      margin: 0px;
+      height: 23px;
+      padding: 0 5px;
+      font-size: 0.9rem;
+    }
+    .AirOneWayPlan {
+      margin: 50px auto;
+      padding-top: 30px;
+    }
+    .AirOneWayPlan input {
+      margin: 0 auto;
+    }
+    .AirOneWayPopover {
+      margin: 10px;
+      font-size: 0.9rem;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .AirIntro {
+        padding: 2rem;
+    }
+    .AirTitle h1 {
+      font-size: 2.3rem;
+  }
+    .AirTitle h5 {
+      line-height: 30px;
+      font-size: 0.9rem;
+    }
+    .AirTabs {
+      margin: 80px 0;
+    }
+    .AirTabs > div {
+        width: 80vw;
+    }
+    .AirTabs select {
+        margin-top: 30px;
+        width: 30vw;
+    }
+    .AirTabs button {
+      padding: 7px 12px;
+    }
+    
+    .AirTabTitle b {
+      font-size: 1.8rem;
+      margin : 0 20px;
+    }
+    .AirTabContent input, .AirOneWayPlan input {
+      width: 20vw;
+      font-size: 0.9rem;
+    }
+    .AirTabContent div.AirContentDiv {
+      width: 20vw;
+      height: 30px;
+      font-size: 0.9rem;
+      border-bottom: 0.1px solid white;
+      display: inline-block;
+    }
+    .AirTabContent select {
+      width: 10vw;
+      background-color: rgba(255, 255, 255, 0);
+      color: white;
+      border-radius: 0;
+      border: none;
+      margin: 0px;
+      height: 23px;
+      padding: 0 5px;
+      font-size: 0.9rem;
+    }
+    .AirOneWayPlan {
+      margin: 50px auto;
+      padding-top: 30px;
+    }
+    .AirOneWayPlan input {
+      margin: 0 auto;
+    }
+    .AirOneWayPopover {
+      margin: 10px;
+      font-size: 0.9rem;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+  .AirIntro {
+    padding: 3rem;
+  }
+  .AirTitle h1 {
+    font-size: 2.5rem;
+}
+  .AirTitle h5 {
+    line-height: 30px;
+    font-size: 1.1rem;
+  }
+  .AirTabs {
+      margin: 100px 0;
+  }
+  .AirTabs > div {
+      width: 70vw;
+  }
+  .AirTabs select {
+      margin-top: 30px;
+      width: 30vw;
+  }
+
+  .AirTabTitle b {
+    font-size: 2rem;
+    margin : 0 20px;
+  }
+  .AirTabContent input, .AirOneWayPlan input {
+    width: 15vw;
+  }
+  .AirTabContent div.AirContentDiv {
+    width: 15vw;
+    height: 30px;
+    font-size: 0.9rem;
+    border-bottom: 0.1px solid white;
+    display: inline-block;
+  }
+  .AirTabContent select {
+    width: 10vw;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 0;
+    border: none;
+    margin: 0px;
+    height: 23px;
+    padding: 0 5px;
+  }
+  .AirOneWayPlan {
+    margin: 50px auto;
+    padding-top: 30px;
+  }
+  .AirOneWayPlan input {
+    margin: 0 auto;
+  }
+  .AirOneWayPopover {
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width:1023px){
+    .AirIntro {
+        padding: 3rem;
+    }
+    .AirTitle h5 {
+        line-height: 30px;
+    }
+    .AirTabs {
+        margin: 100px 0;
+    }
+    .AirTabs > div {
+        width: 70vw;
+    }
+    .AirTabs select {
+        margin-top: 30px;
+        width: 30vw;
+    }
+    
+    .AirTabTitle b {
+      font-size: 2rem;
+      margin : 0 20px;
+    }
+    .AirTabContent input, .AirOneWayPlan input {
+      width: 15vw;
+    }
+    .AirTabContent div.AirContentDiv {
+      width: 15vw;
+      height: 30px;
+      font-size: 0.9rem;
+      border-bottom: 0.1px solid white;
+      display: inline-block;
+    }
+    .AirTabContent select {
+      width: 10vw;
+      background-color: rgba(255, 255, 255, 0);
+      color: white;
+      border-radius: 0;
+      border: none;
+      margin: 0px;
+      height: 23px;
+      padding: 0 5px;
+    }
+    .AirOneWayPlan {
+      margin: 50px auto;
+      padding-top: 30px;
+    }
+    .AirOneWayPlan input {
+      margin: 0 auto;
+    }
+}
+
+
+.AirOneWayPopover {
+  margin: 10px;
+  font-size: 0.9rem;
+}

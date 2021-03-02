@@ -1,0 +1,295 @@
+@media only screen and (max-width:450px){
+    .mypagePassMargin {
+        margin: 10px;
+    }
+    .mypageTextField {
+        height: 20ch;
+        width: 23ch;
+        font-size: 8pt;
+    }
+    .MuiInputBase-root {
+        font-size: 1rem !important;
+    }
+    .MuiOutlinedInput-input {
+        padding : 10px 14px !important;
+    }
+    .MuiFormLabel-root {
+        font-size: 1em !important;
+    }
+    .MuiSvgIcon-root {
+        font-size: 1rem !important;
+    }
+    .mypagePassBtn{
+        font-size: 0.5rem;
+        height: 5.5ch;
+        margin: 0 5px !important;
+        padding: 3px 15px !important;
+    }
+    /* 업데이트 폼 */
+    #MypageUpdateForm{
+        margin: 100px auto;
+        width: 95vw;
+    }
+    #memberUpdateChip {
+        max-width: 90vw;
+        overflow-x: hidden;
+    }
+    #MypageUpdateForm>table>caption {
+        font-size: 13pt;
+    }
+    .mypageUpdateBtn {
+        cursor: pointer;
+    }
+    #MypageUpdateForm input, #MypageUpdateForm select, #MypageUpdateForm table {
+        font-size: 0.7em;
+    }
+    .mypageUpdateBtn:hover {
+        background-color: #036E38;
+        color: white;
+    }
+    .mypageUpdateBtn>button:hover {
+        color: white;
+    }
+    .clickMypageUpdateBtn {
+        background-color: #036E38;
+        color: white;
+    }
+    .mypageUpdateAddr {
+        padding: 0.375rem 0.5rem;
+        width: 20vw;
+        border: 1px solid #ced4da;
+        color: #495057;
+        border-radius: 0.25rem;
+        margin: 0 3px;
+    }
+    .postSearchModal {
+        position: absolute;
+        top: 0px;
+        width: 30vw;
+        height: 40vw;
+        z-index: 100;
+        border: 1px solid #000000;
+        overflow: auto;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .mypagePassMargin {
+        margin: 10px;
+    }
+    .mypageTextField {
+        height: 20ch;
+        width: 23ch;
+        font-size: 8pt;
+    }
+    .MuiInputBase-root {
+        font-size: 1rem !important;
+    }
+    .MuiOutlinedInput-input {
+        padding : 10px 14px !important;
+    }
+    .MuiFormLabel-root {
+        font-size: 1em !important;
+    }
+    .MuiSvgIcon-root {
+        font-size: 1rem !important;
+    }
+    .mypagePassBtn{
+        font-size: 0.8rem;
+        height: 6ch;
+    }
+    .mypagePassBtn{
+        font-size: 0.5rem;
+        height: 5.5ch;
+        margin: 0 5px !important;
+        padding: 3px 15px !important;
+    }
+    /* 업데이트 폼 */
+    #MypageUpdateForm{
+        margin: 100px auto;
+        width: 80vw;
+    }
+    #memberUpdateChip {
+        max-width: 75vw;
+        overflow-x: hidden;
+    }
+    #MypageUpdateForm>form>table>caption {
+        font-size: 20pt;
+    }
+    .mypageUpdateBtn {
+        cursor: pointer;
+    }
+    #MypageUpdateForm input, #MypageUpdateForm select, #MypageUpdateForm table {
+        font-size: 0.8em;
+    }
+    .mypageUpdateBtn:hover {
+        background-color: #036E38;
+        color: white;
+    }
+    .mypageUpdateBtn>button:hover {
+        color: white;
+    }
+    .clickMypageUpdateBtn {
+        background-color: #036E38;
+        color: white;
+    }
+    .mypageUpdateAddr {
+        padding: 0.375rem 0.5rem;
+        width: 20vw;
+        border: 1px solid #ced4da;
+        color: #495057;
+        border-radius: 0.25rem;
+        margin: 0 3px;
+    }
+    .postSearchModal {
+        position: absolute;
+        top: 0px;
+        width: 30vw;
+        height: 40vw;
+        z-index: 100;
+        border: 1px solid #000000;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .mypagePassMargin {
+        margin: 10px;
+    }
+    .mypageTextField {
+        height: 20ch;
+        width: 25ch;
+        font-size: 10pt;
+    }
+    .MuiInputBase-root {
+        font-size: 1.2rem !important;
+    }
+    .MuiOutlinedInput-input {
+        padding : 10px 14px !important;
+    }
+    .MuiFormLabel-root {
+        font-size: 1.2em !important;
+    }
+    .MuiSvgIcon-root {
+        font-size: 1.5rem !important;
+    }
+    .mypagePassBtn{
+        font-size: 0.8rem;
+        height: 6ch;
+        margin: 0 5px !important;
+    }
+
+    /* 업데이트 폼 */
+    #MypageUpdateForm{
+        margin: 100px auto;
+        width: 60vw;
+    }
+    #memberUpdateChip {
+        max-width: 55vw;
+        overflow-x: hidden;
+    }
+    #MypageUpdateForm>form>table>caption {
+        font-size: 20pt;
+    }
+    .mypageUpdateBtn {
+        cursor: pointer;
+    }
+    #MypageUpdateForm input, #MypageUpdateForm select, #MypageUpdateForm table {
+        font-size: 0.8em;
+    }
+    .mypageUpdateBtn:hover {
+        background-color: #036E38;
+        color: white;
+    }
+    .mypageUpdateBtn>button:hover {
+        color: white;
+    }
+    .clickMypageUpdateBtn {
+        background-color: #036E38;
+        color: white;
+    }
+    .mypageUpdateAddr {
+        padding: 0.375rem 0.5rem;
+        width: 10vw;
+        border: 1px solid #ced4da;
+        color: #495057;
+        border-radius: 0.25rem;
+        margin: 0 3px;
+    }
+    .postSearchModal {
+        position: absolute;
+        top: 0px;
+        width: 30vw;
+        height: 40vw;
+        z-index: 100;
+        border: 1px solid #000000;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width:1023px){
+    .mypagePassMargin {
+        margin: 10px;
+    }
+    .mypageTextField {
+        height: 25ch;
+        width: 25ch;
+    }
+    .MuiInputBase-root {
+        font-size: 1.2rem !important;
+    }
+    .MuiOutlinedInput-input {
+        padding : 10px 14px !important;
+    }
+    .MuiFormLabel-root {
+        font-size: 1.2em !important;
+    }
+    .MuiSvgIcon-root {
+        font-size: 1.5rem !important;
+    }
+    .mypagePassBtn{
+        height: 6ch;
+        margin: 0 5px !important;
+    }
+
+    /* 업데이트 폼 */
+    #MypageUpdateForm{
+        margin: 100px auto;
+        width: 50vw;
+    }
+    #memberUpdateChip {
+        max-width: 45vw;
+        overflow-x: hidden;
+    }
+    #MypageUpdateForm>form>table>caption {
+        font-size: 20pt;
+    }
+    .mypageUpdateBtn {
+        cursor: pointer;
+    }
+    .mypageUpdateBtn:hover {
+        background-color: #036E38;
+        color: white;
+    }
+    .mypageUpdateBtn>button:hover {
+        color: white;
+    }
+    .clickMypageUpdateBtn {
+        background-color: #036E38;
+        color: white;
+    }
+    .mypageUpdateAddr {
+        padding: 0.375rem 0.5rem;
+        width: 10vw;
+        border: 1px solid #ced4da;
+        color: #495057;
+        border-radius: 0.25rem;
+        margin: 0 3px;
+    }
+    .postSearchModal {
+        position: absolute;
+        top: 0px;
+        width: 30vw;
+        height: 40vw;
+        z-index: 100;
+        border: 1px solid #000000;
+        overflow: hidden;
+    }
+}

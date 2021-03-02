@@ -1,0 +1,124 @@
+.rentcarSection {
+    background-image: url('../../../image/Reser_rentcar.jpg'); 
+    background-size: cover; 
+    background-position: center center;
+}
+
+@media only screen and (max-width:450px){
+    .rentcarIntro {
+        padding: 70px 10px;
+    }
+
+    /* 테이블 */
+    #rentCarMainTable {
+        width: 90vw;
+        margin: 50px auto;
+    }
+    #rentCarMainTable td {
+        font-size: 0.6rem;
+    }
+
+    /* 일정추가 모달 */
+    .RentAddModal h4 {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .RentAddModal {
+        padding: 15px;
+        line-height: 30px;
+        font-size: 0.8rem;
+    }
+    .RentAddModal button {
+        padding: 8px 13px !important;
+    }
+    .RentAddModal b {
+        font-weight: 700;
+    }
+    .RentAddModal input {
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    .rentcarIntro {
+        padding: 100px 0;
+    }
+    
+    /* 테이블 */
+    #rentCarMainTable {
+        width: 90vw;
+        margin: 50px auto;
+    }
+    #rentCarMainTable td {
+        font-size: 0.8rem;
+    }
+
+    /* 일정추가 모달 */
+    .RentAddModal h4 {
+        font-weight: 500;
+    }
+    .RentAddModal {
+        padding: 30px;
+        line-height: 35px;
+    }
+    .RentAddModal b {
+        font-weight: 700;
+    }
+    .RentAddModal input {
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    .rentcarIntro {
+        padding: 100px 0;
+    }
+    
+    /* 테이블 */
+    #rentCarMainTable {
+        width: 80vw;
+        margin: 50px auto;
+    }
+
+    /* 일정추가 모달 */
+    .RentAddModal h4 {
+        font-weight: 500;
+    }
+    .RentAddModal {
+        padding: 30px;
+        line-height: 35px;
+    }
+    .RentAddModal b {
+        font-weight: 700;
+    }
+    .RentAddModal input {
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (min-width:1023px){
+    .rentcarIntro {
+        padding: 150px 0;
+    }
+
+    /* 테이블 */
+    #rentCarMainTable {
+        width: 80vw;
+        margin: 50px auto;
+    }
+
+    /* 일정추가 모달 */
+    .RentAddModal h4 {
+        font-weight: 500;
+    }
+    .RentAddModal {
+        padding: 30px;
+        line-height: 35px;
+    }
+    .RentAddModal b {
+        font-weight: 700;
+    }
+    .RentAddModal input {
+        margin-bottom: 10px;
+    }
+}

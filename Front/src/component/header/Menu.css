@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "NotoSans-ExtraBold";
+    src: url("../../font/NotoSans-ExtraBold.ttf") format("truetype");
+    font-style: auto;
+}
+
+/*flex*/
+ul.menu {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.menu li {
+    /* padding: 10px 0; */
+    width: calc((100% /7));
+    background: rgba(255,255,255);
+    transition: 0.7s;
+}
+ul.menu li.logo {
+    width: calc((100%/7*2));
+}
+.logo img {
+    /* width: 10vw; */
+    height: 85px;
+    /* overflow-y: hidden; */
+}
+
+ul.menu li a {
+    display: block;
+    /* font-weight: bold; */
+    color: #333;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+ul.menu li.menuLi:hover {
+    width: 25%;
+    background:#036E38;
+}
+
+ul.menu li.menuLi > a:hover {
+    background-color: #036E38;
+    color: white;
+}
+ul.menu li.logo a:hover {
+    background-color: white !important;
+}
+/*normal*/
+div.hide {
+    position: fixed;
+    top: -85px;
+    width: 100%;
+    z-index: 100;
+}
+
+/* tour 메뉴 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+  
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+}
+.dropdown-content a:hover {
+    background-color: #036E38;
+    color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dropdownTitle:hover {
+    color: white;
+}
+
+@media only screen and (max-width:450px){
+    .mobildMenuDrawer a {
+        color: #333;
+    }
+    .mobildMenuDrawer .MuiAccordion-rounded:last-child {
+        border-radius: 0;
+    }
+    .mobildMenuDrawer .MuiPaper-elevation1 {
+        box-shadow: 0px 0px 0px 0px ;
+    }
+    /* ul.mobilemenu li {
+        width: calc(100%/3);
+        background: rgba(255,255,255); */
+        /* transition: 0.7s; */
+    /* }
+    ul.mobilemenu {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    ul.mobilemenu li a {
+        display: block;
+        font-weight: bold;
+        color: #5F5F5F;
+        text-decoration: none;
+        box-sizing: border-box;
+        text-align: right;
+    } */
+    /* ul.mobilemenu li:hover {
+        width: 25%;
+        background:#036E38;
+    }
+    
+    ul.mobilemenu li a:hover {
+        background-color: #036E38;
+        color: white;
+    } */
+}
+@media only screen and (min-width:450px) and (max-width:770px){
+    ul.menu {
+        line-height: 50px;
+    }
+    ul.menu li a {
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    .dropdown-content {
+        font-size: 8pt;
+        top: 50px;
+    }
+    .dropdown-content a {
+        line-height: 30px;
+        height: 30px;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1023px){
+    ul.menu {
+        line-height: 60px;
+    }
+    ul.menu li a {
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .dropdown-content {
+        font-size: 10pt;
+        top: 60px;
+    }
+    .dropdown-content a {
+        line-height: 40px;
+        height: 40px;
+    }
+}
+@media only screen and (min-width:1023px){
+    ul.menu {
+        line-height: 80px;
+        height: 80px;
+    }
+    ul.menu li a {
+        font-size: 1.1em;
+        font-weight: 500;
+        /* font-family: NotoSans-ExtraBold !important; */
+    }
+    .dropdown-content {
+        font-size: 12pt;
+        top: 80px;
+    }
+    .dropdown-content a {
+        line-height: 50px;
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+/*div.menu ul {*/
+/*    list-style: none;*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
+
+/*div.hide ul li, div.normal ul li {*/
+/*    float: right;*/
+/*    font-size: 1.5em;*/
+/*    margin-top: 10px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*div ul li.logo {*/
+/*    float: left;*/
+/*}*/
+
+/*div.menu ul li {*/
+/*    margin-right: 20px;*/
+/*}*/
+
+
+/*div.hide {*/
+/*    background-color: #ffe480;*/
+/*    height: 50px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*div.normal {*/
+/*    background-color: rgba(0, 0, 0, 0);*/
+/*    height: 50px;*/
+/*}*/
+

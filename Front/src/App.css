@@ -1,0 +1,136 @@
+/*.yang{*/
+/*}*/
+
+div.mainFrame {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+div.footerComp .content {
+    text-align: center;
+}
+
+/*Chatting Icon*/
+@media only screen and (max-width: 450px) {
+    div.chatting div.chattingIconBack {
+        transform: scale(0.7);
+        width: 100px;
+        height: 100px;
+        /* background-color: #0d6b38; */
+        background-color: #f4de13;
+        border-radius: 30px;
+        position: fixed;
+        z-index: 20;
+        right: 0px;
+        bottom: 0px;
+        /* border: 5px solid gold; */
+        /* transform-origin: right bottom; */
+        transform-origin: center center;
+    }
+
+    /*div.chatting div.chattingIconBack:hover {*/
+    /*    cursor: pointer;*/
+    /*    transform: scale(1.1);*/
+    /*    !*z-index: 23;*!*/
+    /*    border: 5px inset silver;*/
+    /*}*/
+
+    div.chatting div.chattingIconBack .chattingIcon {
+        color: #423732;
+        position: relative;
+        top: 41%;
+        left: 39%;
+        z-index: 21;
+        transform: scale(2.8);
+        font-size: 1.5em !important;
+    }
+
+    div.chatting div.chattingIconBack .chattingNotiIconBack {
+        width: 34px;
+        height: 34px;
+        border-radius: 34px;
+        background-color: #ff4242;
+        transform-origin: center center;
+        position: relative;
+        top: -30%;
+        left: -5%;
+        z-index: 22;
+    }
+
+    div.chatting div.chattingIconBack .chattingNotiIconBack .chattingNotiIcon {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 13%;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    div.chatting div.chattingIconBack {
+        width: 100px;
+        height: 100px;
+        /*background-color: #0d6b38;*/
+        background-color: #f4de13;
+        border-radius: 30px;
+        position: fixed;
+        z-index: 20;
+        right: 20px;
+        bottom: 20px;
+        /*border: 5px  solid gold;*/
+        /*transform-origin: right bottom;*/
+        transform-origin: center center;
+    }
+
+    div.chatting div.chattingIconBack:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        /*z-index: 23;*/
+        border: 5px inset silver;
+    }
+    div.chatting div.chattingIconBack .chattingIcon {
+        color: #423732;
+        position: relative;
+        top: 41%;
+        left: 39%;
+        z-index: 21;
+        transform: scale(2.8);
+        font-size: 1.5em !important;
+    }
+
+    div.chatting div.chattingIconBack .chattingNotiIconBack {
+        width: 34px;
+        height: 34px;
+        border-radius: 34px;
+        background-color: #ff4242;
+        transform-origin: center center;
+        position: relative;
+        top: -30%;
+        left: -5%;
+        z-index: 22;
+    }
+
+    div.chatting div.chattingIconBack .chattingNotiIconBack .chattingNotiIcon {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 13%;
+    }
+}
+
+
+/*Chatting Window*/
+div.chatting div.chattingWindow {
+    width: 410px;
+    height: 700px;
+    position: fixed;
+    right: 1.5%;
+    bottom: 0.5%;
+    z-index: 22;
+    background-color: black;
+    opacity: 1;
+    transform-origin: right bottom;
+    overflow: hidden;
+    border: 5px inset lightgray;
+    border-radius: 50px;
+}
